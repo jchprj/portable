@@ -1,1 +1,1 @@
-java -jar "%MY_OSS%\cfr_0_122.jar" %1 --outputdir %2
+java -jar "%MY_OSS%\cfr-0.145.jar" %1 --outputdir %2
