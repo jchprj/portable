@@ -22,12 +22,21 @@ Goto END
 F := FileOpen("pass", "r")
 Username := F.ReadLine()
 Passwd := F.ReadLine()
+; Clipboard := Passwd
 Array2 := StrSplit(Passwd)
 for index, element in Array2 ; Enumeration is the recommended approach in most cases.
 {
     Sleep(interval)
     Send element
 }
+Goto END
+
+^!j::
+F := FileOpen("pass", "r")
+Username := F.ReadLine()
+Passwd := F.ReadLine()
+Other := F.ReadLine()
+Clipboard := Other
 Goto END
 
 END:
