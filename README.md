@@ -8,6 +8,25 @@ For some scripts, should define MY_OSS environment variable first, towards a fol
 
 Also, this cmd path should be added to PATH
 
+# Node.js
+
+## renamer
+
+[Usage examples](https://github.com/75lb/renamer/wiki/examples).
+
+```
+$ renamer -d --find "/.*_(\d+)_.*/" --replace "Video $1.mp4" *
+```
+
+### Github
+
+https://github.com/75lb/renamer
+
+### Install
+
+```
+$ npm install -g renamer
+```
 
 # OSS
 
