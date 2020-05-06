@@ -1,3 +1,14 @@
+^!n::
+F := FileOpen("pass", "r")
+Username := F.ReadLine()
+Array := StrSplit(Username)
+for index, element in Array ; Enumeration is the recommended approach in most cases.
+{
+    Sleep(interval)
+    Send element
+}
+Goto END
+
 ^!u::
 F := FileOpen("pass", "r")
 Username := F.ReadLine()
