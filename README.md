@@ -41,3 +41,9 @@ Code: https://github.com/leibnitz27/cfr
 Official: http://p-nand-q.com/download/gtools/index.html
 
 Code: https://code.google.com/archive/p/pserv4/ or https://github.com/gersonkurz/pserv4
+
+## MySQL Workbench 6.3 (Portable)
+
+Official: https://downloads.mysql.com/archives/workbench/
+
+Code: https://github.com/mysql/mysql-workbench/tree/6.3
