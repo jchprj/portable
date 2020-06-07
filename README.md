@@ -1,5 +1,13 @@
 # Portable
 
+Some scripts need `choco`, the package manager for Windows.
+
+From [official website](https://chocolatey.org/install), this is the command to install `choco`(copied on 2020/06/06), need administrative powershell:
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
 ## cmd
 
 Windows cmd scripts.
@@ -47,3 +55,7 @@ Code: https://code.google.com/archive/p/pserv4/ or https://github.com/gersonkurz
 Official: https://downloads.mysql.com/archives/workbench/
 
 Code: https://github.com/mysql/mysql-workbench/tree/6.3
+
+Tried install using `choco`, but got 
+
+> Attempt to get headers for http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-6.3.8-winx64.msi failed.
