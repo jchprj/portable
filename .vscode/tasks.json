@@ -12,6 +12,15 @@
             "label": "wsl portable",
             "type": "shell",
             "command": "wsl ./portable.sh"
+        },
+        {
+            "label": "choco install",
+            "type": "shell",
+            "command": "choco_elevation.cmd",
+            "args": ["${selectedText}"],
+            "options": {
+                "cwd": "${workspaceFolder}\\scripts"
+            }
         }
     ]
 }

@@ -1,5 +1,7 @@
 # Portable
 
+## choco
+
 Some scripts need `choco`, the package manager for Windows.
 
 From [official website](https://chocolatey.org/install), this is the command to install `choco`(copied on 2020/06/06), need administrative powershell:
@@ -7,6 +9,9 @@ From [official website](https://chocolatey.org/install), this is the command to 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
+
+VS Code task `choco install` leveraged elevation script from [cmd - How do you run a command as an administrator from the Windows command line? - Stack Overflow](https://stackoverflow.com/questions/5944180/how-do-you-run-a-command-as-an-administrator-from-the-windows-command-line/5953967)
+
 
 ## cmd
 
