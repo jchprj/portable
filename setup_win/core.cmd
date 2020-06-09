@@ -4,3 +4,4 @@ choco install -y git.install
 choco install -y tortoisegit
 choco install -y openvpn
 choco install -y cpu-z.portable
+choco install -y vscode
