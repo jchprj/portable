@@ -1,7 +1,12 @@
+choco install intellijidea-ultimate
+choco install intellijidea-community
+choco install jdk8
+
 choco install Xming
 
 choco install mysql.workbench
 choco install heidisql
+REM community version
 choco install sqlyog
 choco install redis-desktop-manager
 choco install sqlitebrowser.portable
