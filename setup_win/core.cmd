@@ -1,3 +1,5 @@
+pkgmgr /iu:"TelnetClient"
+
 choco install -y 7zip
 choco install -y googlechrome
 choco install -y git.install
