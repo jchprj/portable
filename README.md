@@ -21,6 +21,16 @@ For some scripts, should define MY_OSS environment variable first, towards a fol
 
 Also, this cmd path should be added to PATH
 
+# VS Code
+
+## Extension commands
+```
+code --list-extensions
+code --install-extension ms-vscode.cpptools
+code --uninstall-extension ms-vscode.csharp
+```
+
+
 # Node.js
 
 ## renamer
