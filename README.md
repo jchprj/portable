@@ -51,6 +51,26 @@ https://github.com/75lb/renamer
 $ npm install -g renamer
 ```
 
+# Python
+
+## getsheet.py
+
+Save each sheets in an Excel file to a single file in a folder, could set output format as xlsx or csv.
+
+### Github(forked)
+
+https://gist.github.com/jchprj/b0da41a56c858b4b18ffbe9916522adb
+
+### Prerequisites
+
+```pip3 install pandas xlrd openpyxl```
+
+### Run
+
+Windows
+
+```getsheets.cmd```
+
 # OSS
 
 ## CFR - another java decompiler
