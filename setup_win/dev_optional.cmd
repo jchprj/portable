@@ -10,6 +10,7 @@ REM community version
 choco install sqlyog
 choco install redis-desktop-manager
 choco install sqlitebrowser.portable
+choco install mongoclient
 
 choco install glogg
 choco install soapui
