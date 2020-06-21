@@ -1,6 +1,7 @@
 
 code --install-extension slevesque.vscode-zipexplorer
 code --install-extension GrapeCity.gc-excelviewer
+code --install-extension janisdd.vscode-edit-csv
 code --install-extension RandomFractalsInc.vscode-data-preview
 code --install-extension slevesque.vscode-hexdump
 
