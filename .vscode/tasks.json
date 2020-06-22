@@ -14,13 +14,28 @@
             "command": "wsl ./portable.sh"
         },
         {
-            "label": "choco install",
+            "label": "choco install -y",
             "type": "shell",
-            "command": "choco_elevation.cmd",
-            "args": ["${selectedText}"],
+            "command": "elevation.cmd",
+            "args": ["choco", "install", "-y", "${selectedText}"],
             "options": {
                 "cwd": "${workspaceFolder}\\scripts"
             }
+        },
+        {
+            "label": "choco install",
+            "type": "shell",
+            "command": "elevation.cmd",
+            "args": ["choco", "install", "${selectedText}"],
+            "options": {
+                "cwd": "${workspaceFolder}\\scripts"
+            }
+        },
+        {
+            "label": "Open choco package in browser",
+            "type": "shell",
+            "command": "explorer",
+            "args": ["https://chocolatey.org/packages/${selectedText}"]
         }
     ]
 }

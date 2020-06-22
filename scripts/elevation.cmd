@@ -17,8 +17,8 @@ cscript //nologo "%~f0?.wsf" //job:Elevate & exit /b
 echo Running as elevated user.
 echo Script file : %~f0
 echo Arguments   : %*
-echo choco install -y %*
-choco install -y %*
+echo %*
+%*
 echo Working dir : %cd%
 echo.
 :: administrator commands here
