@@ -2,6 +2,10 @@ choco install intellijidea-ultimate
 choco install intellijidea-community
 choco install jdk8
 
+choco install postman
+REM MIT. Javascript. Powerful HTTP toolbelt, in one intuitive app
+choco install insomnia-rest-api-client
+
 choco install Xming
 
 choco install mysql.workbench
