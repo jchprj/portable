@@ -71,6 +71,22 @@ Windows
 
 ```getsheets.cmd```
 
+## WsgiDAV
+
+MIT
+
+https://pypi.org/project/WsgiDAV/
+
+Could be integrated with Chrome extension `floccus bookmarks sync`.
+
+### Install
+
+```pip install wsgidav cheroot```
+
+### Run
+
+```wsgidav --host=0.0.0.0 --port=8080 --root="folder" --auth anonymous```
+
 # OSS
 
 ## CFR - another java decompiler
