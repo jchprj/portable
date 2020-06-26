@@ -1,6 +1,6 @@
 # Portable
 
-## choco
+## Chocolatey(Windows)
 
 Some scripts need `choco`, the package manager for Windows.
 
@@ -12,6 +12,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 VS Code task `choco install` leveraged elevation script from [cmd - How do you run a command as an administrator from the Windows command line? - Stack Overflow](https://stackoverflow.com/questions/5944180/how-do-you-run-a-command-as-an-administrator-from-the-windows-command-line/5953967)
 
+## Snap(Linux)
+
+Install Snapd: https://snapcraft.io/docs/installing-snapd
 
 ## cmd
 
