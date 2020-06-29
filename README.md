@@ -90,6 +90,20 @@ Could be integrated with Chrome extension `floccus bookmarks sync`.
 
 ```wsgidav --host=0.0.0.0 --port=8080 --root="folder" --auth anonymous```
 
+## convert-csv-to-xlsx
+
+MIT
+
+https://pypi.org/project/convert-csv-to-xlsx/
+
+### Install
+
+```pip install convert-csv-to-xlsx```
+
+### Run
+
+```convert_csv_to_xlsx.py [OPTIONS] CSV_FILE [XLSX_FILE]```
+
 # OSS
 
 ## CFR - another java decompiler
