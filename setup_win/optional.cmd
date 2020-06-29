@@ -6,6 +6,8 @@ choco install nomacs
 choco install sumatrapdf.commandline
 choco install notepadplusplus.commandline
 choco install papercut
+REM GPLv3. C#. Screen capture, file sharing and productivity tool.
+choco install sharex
 
 choco install emule
 choco install qbittorrent
