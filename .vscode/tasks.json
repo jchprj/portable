@@ -35,7 +35,31 @@
             "label": "Open choco package in browser",
             "type": "shell",
             "command": "explorer",
-            "args": ["https://chocolatey.org/packages/${selectedText}"]
+            "args": ["\"https://chocolatey.org/packages/${selectedText}\""]
+        },
+        {
+            "label": "choco info",
+            "type": "shell",
+            "command": "choco",
+            "args": ["info", "${selectedText}"]
+        },
+        {
+            "label": "code --install-extension",
+            "type": "shell",
+            "command": "code",
+            "args": ["--install-extension", "${selectedText}"]
+        },
+        {
+            "label": "code --list-extensions",
+            "type": "shell",
+            "command": "code",
+            "args": ["--list-extensions"]
+        },
+        {
+            "label": "Open VS Code extension in browser",
+            "type": "shell",
+            "command": "explorer",
+            "args": ["\"https://marketplace.visualstudio.com/items?itemName=${selectedText}\""]
         }
     ]
 }
