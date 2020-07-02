@@ -10,6 +10,8 @@ REM community version
 choco install sqlyog
 choco install redis-desktop-manager
 choco install sqlitebrowser.portable
+choco install mongodb
+choco install mongodb.portable
 choco install mongoclient
 
 choco install postman
