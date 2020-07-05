@@ -13,6 +13,9 @@ choco install sqlitebrowser.portable
 choco install mongodb
 choco install mongodb.portable
 choco install mongoclient
+REM APLv2. Java. Free multi-platform database tool for developers, SQL programmers, database administrators and analysts. Supports any database which has JDBC driver (which basically means - ANY database). EE version also supports non-JDBC datasources (MongoDB, Cassandra, Redis, DynamoDB, etc).
+choco install dbeaver
+choco install dbeaver-ee
 
 choco install postman
 REM MIT. Javascript. Powerful HTTP toolbelt, in one intuitive app
