@@ -1,8 +1,18 @@
 choco install intellijidea-ultimate
 choco install intellijidea-community
-choco install jdk8
+choco install androidstudio
 
+choco install jdk8
 choco install python3
+REM conda install anaconda-navigator (https://docs.anaconda.com/anaconda/navigator/install/)
+choco install miniconda3
+choco install anaconda3
+choco install ruby
+REM This package can be used with ruby package to provide native building environment for gems.
+choco install msys2
+REM GPLv1
+choco install strawberryperl
+choco install mingw
 
 choco install mysql.workbench
 choco install heidisql
