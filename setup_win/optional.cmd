@@ -26,3 +26,5 @@ REM GPLv3.
 choco install rosaimagewriter
 REM GPLv2. Java. Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features.
 choco install angryip
+
+choco install steam
