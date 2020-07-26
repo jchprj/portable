@@ -13,6 +13,7 @@ REM This package can be used with ruby package to provide native building enviro
 choco install msys2
 REM GPLv1
 choco install strawberryperl
+REM This will install a python.exe into the Chocolatey bin path, cause some Python issue.
 choco install mingw
 
 choco install mysql.workbench
