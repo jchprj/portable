@@ -1,4 +1,4 @@
-sudo apt-get update -y
+sudo apt update -y
 sudo apt install -y htop
 sudo apt install -y net-tools
 sudo apt install -y curl
@@ -13,4 +13,6 @@ sudo apt install -y vim
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-sudo apt-get install mingw-w64
+sudo apt install mingw-w64
+
+sudo apt install privoxy

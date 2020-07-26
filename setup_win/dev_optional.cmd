@@ -3,6 +3,7 @@ choco install intellijidea-community
 choco install androidstudio
 
 choco install jdk8
+choco install openjdk
 choco install python3
 REM conda install anaconda-navigator (https://docs.anaconda.com/anaconda/navigator/install/)
 choco install miniconda3
@@ -42,3 +43,5 @@ choco install nssm
 choco install wireshark
 
 choco install Xming
+
+scoop install allure

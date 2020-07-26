@@ -3,7 +3,7 @@
 ## Ubuntu 18.04: Connect to GNOME desktop environment via XRDP
 https://www.hiroom2.com/2018/04/29/ubuntu-1804-xrdp-gnome-en/
 ```
-sudo apt-get install -y xrdp
+sudo apt install -y xrdp
 sudo ufw allow 3389/tcp
 sudo sed -e 's/^new_cursors=true/new_cursors=false/g' \
            -i /etc/xrdp/xrdp.ini

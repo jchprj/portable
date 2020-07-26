@@ -5,3 +5,5 @@ brew doctor
 
 brew install telnet
 brew install wget
+
+brew install shadowsocks-libev

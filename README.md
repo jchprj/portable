@@ -12,6 +12,17 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 VS Code task `choco install` leveraged elevation script from [cmd - How do you run a command as an administrator from the Windows command line? - Stack Overflow](https://stackoverflow.com/questions/5944180/how-do-you-run-a-command-as-an-administrator-from-the-windows-command-line/5953967)
 
+## Scoop(Windows)
+
+Scoop installs programs to your home directory by default. So you don’t need admin permissions to install programs, and you won’t see UAC popups every time you need to add or remove a program.
+
+[Official website](https://scoop.sh/)
+
+[GitHub](https://github.com/lukesampson/scoop)
+```
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+```
+
 ## Snap(Linux)
 
 Install Snapd: https://snapcraft.io/docs/installing-snapd
