@@ -29,7 +29,6 @@ code --install-extension rokoroku.vscode-theme-darcula
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 
 code --install-extension golf1052.code-sync
-code --install-extension alefragnani.Bookmarks
 code --install-extension alefragnani.project-manager
 
 code --install-extension rohgarg.jekyll-post
