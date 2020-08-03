@@ -28,3 +28,7 @@ REM GPLv2. Java. Angry IP Scanner (or simply ipscan) is an open-source and cross
 choco install angryip
 
 choco install steam
+
+choco install scrcpy
+REM for scrcpy if you don't have it yet
+choco install adb
