@@ -16,3 +16,5 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt install mingw-w64
 
 sudo apt install privoxy
+
+sudo apt install ruby

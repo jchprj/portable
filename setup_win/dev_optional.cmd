@@ -9,6 +9,7 @@ REM conda install anaconda-navigator (https://docs.anaconda.com/anaconda/navigat
 choco install miniconda3
 choco install anaconda3
 choco install ruby
+choco install jruby
 REM This package can be used with ruby package to provide native building environment for gems.
 choco install msys2
 REM GPLv1

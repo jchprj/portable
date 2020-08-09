@@ -15,3 +15,5 @@ sudo snap install p3x-onenote
 sudo snap install shadowsocks-libev
 
 sudo snap install scrcpy
+
+sudo snap install ruby --classic
