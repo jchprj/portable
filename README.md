@@ -19,31 +19,42 @@ Scoop installs programs to your home directory by default. So you don’t need a
 [Official website](https://scoop.sh/)
 
 [GitHub](https://github.com/lukesampson/scoop)
+
 ```
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 ```
+
+## Windows Package Manager Client(Windows)
+
+https://github.com/microsoft/winget-cli
 
 ## Snap(Linux)
 
 Install Snapd: https://snapcraft.io/docs/installing-snapd
 
+## Homebrew on Linux(Linux)
+
+[https://docs.brew.sh/Homebrew-on-Linux](https://docs.brew.sh/Homebrew-on-Linux)
+
+*The Homebrew package manager may be used on Linux and Windows Subsystem for Linux (WSL). Homebrew was formerly referred to as Linuxbrew when running on Linux or WSL. It can be installed in your home directory, in which case it does not use sudo.*
+
 ## cmd
 
 Windows cmd scripts.
 
-For some scripts, should define MY_OSS environment variable first, towards a folder contains related files
+For some scripts, should define MY\_OSS environment variable first, towards a folder contains related files
 
 Also, this cmd path should be added to PATH
 
 # VS Code
 
 ## Extension commands
+
 ```
 code --list-extensions
 code --install-extension ms-vscode.cpptools
 code --uninstall-extension ms-vscode.csharp
 ```
-
 
 # Node.js
 
@@ -135,6 +146,6 @@ Official: https://downloads.mysql.com/archives/workbench/
 
 Code: https://github.com/mysql/mysql-workbench/tree/6.3
 
-Tried install using `choco`, but got 
+Tried install using `choco`, but got
 
 > Attempt to get headers for http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-6.3.8-winx64.msi failed.
