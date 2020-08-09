@@ -7,6 +7,7 @@ choco install -y tortoisegit
 choco install -y openvpn
 choco install -y cpu-z.portable
 choco install -y vscode
+choco install -y microsoft-windows-terminal
 
 scoop install sudo
 scoop install aria2 curl grep sed less touch
