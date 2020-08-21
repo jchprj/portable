@@ -1,5 +1,8 @@
 code --install-extension hbenl.vscode-test-explorer
 code --install-extension mtxr.sqltools
+code --install-extension mtxr.sqltools-driver-mysql
+code --install-extension mtxr.sqltools-driver-mssql
+code --install-extension mtxr.sqltools-driver-sqlite
 
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
