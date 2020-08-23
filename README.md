@@ -32,11 +32,25 @@ https://github.com/microsoft/winget-cli
 
 Install Snapd: https://snapcraft.io/docs/installing-snapd
 
+Snap does not support WSL.
+
 ## Homebrew on Linux(Linux)
 
 [https://docs.brew.sh/Homebrew-on-Linux](https://docs.brew.sh/Homebrew-on-Linux)
 
 *The Homebrew package manager may be used on Linux and Windows Subsystem for Linux (WSL). Homebrew was formerly referred to as Linuxbrew when running on Linux or WSL. It can be installed in your home directory, in which case it does not use sudo.*
+
+## SDKMAN(UNIX-like)
+
+Install: https://sdkman.io/install
+
+SDKMAN is written in bash, it requires a bash environment to be present.  
+SDKMAN can not be installed natively on Windows and requires WLS, Cygwin or MSYS+MinGW.
+
+```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
 
 ## cmd
 
