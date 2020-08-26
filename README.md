@@ -60,9 +60,9 @@ For some scripts, should define MY\_OSS environment variable first, towards a fo
 
 Also, this cmd path should be added to PATH
 
-# VS Code
+## VS Code Extension
 
-## Extension commands
+### Extension commands
 
 ```
 code --list-extensions
@@ -70,25 +70,12 @@ code --install-extension ms-vscode.cpptools
 code --uninstall-extension ms-vscode.csharp
 ```
 
-# Node.js
+## NPM
 
-## renamer
+Node.js
 
-[Usage examples](https://github.com/75lb/renamer/wiki/examples).
-
-```
-$ renamer -d --find "/.*_(\d+)_.*/" --replace "Video $1.mp4" *
-```
-
-### Github
-
-https://github.com/75lb/renamer
-
-### Install
-
-```
-$ npm install -g renamer
-```
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+https://www.npmjs.com/
 
 # Python
 

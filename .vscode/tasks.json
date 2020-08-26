@@ -60,6 +60,18 @@
             "type": "shell",
             "command": "explorer",
             "args": ["\"https://marketplace.visualstudio.com/items?itemName=${selectedText}\""]
+        },
+        {
+            "label": "npm install --global",
+            "type": "shell",
+            "command": "npm",
+            "args": ["install", "--global", "${selectedText}"]
+        },
+        {
+            "label": "Open NPM package in browser",
+            "type": "shell",
+            "command": "explorer",
+            "args": ["\"https://www.npmjs.com/package/${selectedText}\""]
         }
     ]
 }
