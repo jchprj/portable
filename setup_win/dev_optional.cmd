@@ -48,4 +48,6 @@ choco install wireshark
 
 choco install Xming
 
+choco install docker-desktop
+
 scoop install allure

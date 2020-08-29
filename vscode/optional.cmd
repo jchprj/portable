@@ -12,15 +12,13 @@ code --install-extension DotJoshJohnson.xml
 code --install-extension IBM.XMLLanguageSupport
 code --install-extension zxh404.vscode-proto3
 code --install-extension be5invis.toml
+code --install-extension af4jm.vscode-icalendar
 
 code --install-extension jebbs.plantuml
 code --install-extension EFanZh.graphviz-preview
 
 code --install-extension chrmarti.regex
 code --install-extension le0zh.vscode-regexp-preivew
-
-code --install-extension mhutchie.git-graph
-code --install-extension donjayamanne.githistory
 
 code --install-extension aaron-bond.better-comments
 code --install-extension CoenraadS.bracket-pair-colorizer
