@@ -51,3 +51,7 @@ choco install Xming
 choco install docker-desktop
 
 scoop install allure
+
+REM GPL
+choco install cygwin
+choco install cyg-get
