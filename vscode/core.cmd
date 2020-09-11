@@ -5,3 +5,4 @@ code --install-extension yzhang.markdown-all-in-one
 code --install-extension keshan.markdown-live
 code --install-extension ryanmcalister.unotes
 code --install-extension alefragnani.Bookmarks
+code --install-extension rioj7.command-variable

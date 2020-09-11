@@ -41,7 +41,8 @@ code --install-extension formulahendry.docker-explorer
 code --install-extension formulahendry.dotnet-test-explorer
 code --install-extension mauve.terraform
 code --install-extension chef-software.chef
-
+code --install-extension ivory-lab.jenkinsfile-support
+code --install-extension dave-hagedorn.jenkins-runner
 
 
 code --install-extension ms-python.anaconda-extension-pack

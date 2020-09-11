@@ -45,7 +45,7 @@ code --install-extension streetsidesoftware.code-spell-checker
 
 code --install-extension sandcastle.vscode-open
 code --install-extension narsenico.vscode-progressive-increment
-code --install-extension rioj7.command-variable
+
 
 code --install-extension l13rary.l13-diff
 code --install-extension moshfeu.compare-folders
