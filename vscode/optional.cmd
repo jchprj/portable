@@ -19,6 +19,7 @@ code --install-extension EFanZh.graphviz-preview
 
 code --install-extension chrmarti.regex
 code --install-extension le0zh.vscode-regexp-preivew
+code --install-extension stephen-riley.regexworkbench
 
 code --install-extension aaron-bond.better-comments
 code --install-extension CoenraadS.bracket-pair-colorizer
