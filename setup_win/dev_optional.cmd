@@ -17,6 +17,8 @@ choco install strawberryperl
 REM This will install a python.exe into the Chocolatey bin path, cause some Python issue.
 choco install mingw
 choco install kotlinc
+REM APLv2. C#.
+choco install scriptcs
 
 choco install mysql.workbench
 choco install heidisql
