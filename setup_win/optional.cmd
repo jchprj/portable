@@ -38,3 +38,5 @@ choco install dllexp
 
 REM MIT. JavaScript. Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS.
 choco install joplin
+
+choco install googlechrome.canary

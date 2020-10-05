@@ -17,3 +17,7 @@ sudo snap install shadowsocks-libev
 sudo snap install scrcpy
 
 sudo snap install ruby --classic
+
+sudo snap install vlc
+
+sudo snap install docker

@@ -29,3 +29,7 @@ echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
 # For non login sessions
 echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 source ~/.bashrc
+
+
+sudo apt install virtualbox
+sudo apt install vagrant

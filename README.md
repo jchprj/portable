@@ -78,6 +78,28 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 https://www.npmjs.com/
 
 
+### [apt - NPM is incorrect version on latest Ubuntu (18.04) installation - Ask Ubuntu](https://askubuntu.com/questions/1036278/npm-is-incorrect-version-on-latest-ubuntu-18-04-installation)
+
+_This problem is caused by Bash caching the path of the npm command, and can be solved by_ `hash -d npm`.
+
+### Proxy
+
+From: https://www.jhipster.tech/configuring-a-corporate-proxy/
+
+```
+npm config set proxy http://username:password@host:port
+npm config set https-proxy http://username:password@host:port
+```
+Or in `~/.npmrc`
+
+```
+proxy=http://username:password@host:port
+https-proxy=http://username:password@host:port
+https_proxy=http://username:password@host:port
+```
+
+
+
 ## pip
 
 pip [Installation](https://pip.pypa.io/en/stable/installing/)
