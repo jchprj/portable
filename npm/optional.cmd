@@ -1,5 +1,6 @@
-npm install --global to-ico-cli
-npm install --global renamer
+npm install -g to-ico-cli
+npm install -g renamer
 
 npm install -g node-gyp
-npm install --global windows-build-tools
+npm install -g windows-build-tools
+npm install -g http-server

@@ -32,7 +32,7 @@ code --install-extension golang.Go
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension ritwickdey.LiveServer
 code --install-extension yuichinukiyama.vscode-preview-server
-
+code --install-extension auchenberg.vscode-browser-preview
 
 
 
