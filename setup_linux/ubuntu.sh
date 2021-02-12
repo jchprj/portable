@@ -33,3 +33,14 @@ source ~/.bashrc
 
 sudo apt install virtualbox
 sudo apt install vagrant
+
+
+# https://askubuntu.com/questions/20507/concatenating-several-mp3-files-into-one-mp3
+sudo apt install mp3wrap
+# https://askubuntu.com/questions/473236/renaming-hundreds-of-files-at-once-for-proper-sorting/473355#473355
+sudo apt install rename
+
+
+# https://www.omgubuntu.co.uk/2019/07/scrcpy-mirror-android-to-ubuntu-linux
+# Apache-2.0 License https://github.com/Genymobile/scrcpy
+sudo apt install scrcpy
