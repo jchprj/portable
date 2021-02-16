@@ -9,6 +9,7 @@ choco install -y cpu-z.portable
 choco install -y vscode
 choco install -y microsoft-windows-terminal
 choco install -y portqry
+choco install -y mremoteng
 
 scoop install sudo
 scoop install aria2 curl grep sed less touch
