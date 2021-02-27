@@ -1,0 +1,62 @@
+- name: Install snap core packages
+  snap:
+    name:
+    - vlc
+    - docker
+    - htop
+    - scrcpy
+  tags: 
+    - snap
+    - core
+
+- name: Install snap core packages with option --classic
+  snap:
+    name: 
+    - code
+    # - code-insiders
+    classic: yes
+  tags: 
+    - snap
+    - core
+
+- name: Install snap dev packages with option --classic
+  snap:
+    name: 
+    - go
+    # May Ubuntu only, from https://www.jetbrains.com/idea/download/#section=linux
+    - intellij-idea-community
+    # - intellij-idea-ultimate
+    # - intellij-idea-educational
+    classic: yes
+  tags: 
+    - snap
+    - dev
+
+- name: Install snap use_snap_instead_apt packages
+  snap:
+    name:
+    # Can't run shadowsocks from config file (Invalid config path) https://github.com/shadowsocks/shadowsocks-libev/issues/2433
+    # snapd use apparmor for confinement. The file is considered out of the confinement. Snap has a different way of handling apparmor.
+    # For your case, you can move the file to your snap folder: ~/snap/shadowsocks-libev, then you shall be able to run it.
+    - shadowsocks-libev
+  tags: 
+    - snap
+    - core
+  tags: 
+    - never
+    - use_snap_instead_apt
+
+- name: Install snap use_snap_instead_apt packages with option --classic
+  snap:
+    name: ruby
+    classic: yes
+  tags: 
+    - never
+    - use_snap_instead_apt
+
+- name: Install snap optional packages
+  snap:
+    name: p3x-onenote
+  tags: 
+    - never
+    - optional

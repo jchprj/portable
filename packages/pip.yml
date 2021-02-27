@@ -1,0 +1,31 @@
+- name: Install pip core packages
+  pip:
+    name:
+    - psutil
+    - pypsrp
+    - docker
+    - requests
+    - docker-compose
+    executable: "{{ item }}"
+  loop: "{{ pip_version }}"
+  become: no
+  tags:
+    - pip
+    - core
+
+- name: Install pip dev packages
+  pip:
+    name:
+    - pandas
+    - xlrd
+    - openpyxl
+    - wsgidav
+    - cheroot
+    - convert-csv-to-xlsx
+    - yq
+    executable: "{{ item }}"
+  loop: "{{ pip_version }}"
+  become: no
+  tags:
+    - pip
+    - dev

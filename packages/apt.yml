@@ -1,0 +1,59 @@
+- name: ping in apt.yml
+  ping:
+  tags:
+    - ping
+- name: apt upgrade
+  tags:
+    - apt
+    - upgrade
+  apt:
+    upgrade: yes
+    autoremove: yes
+    allow-unauthenticated: yes
+
+- name: Install apt core packages
+  tags:
+    - apt
+    - core
+  apt:
+    name:
+    - ansible
+    - ansible-lint            # https://bobcares.com/blog/ansible-playbook-tasks-file-must-contain-a-list-of-tasks/
+    - git
+    - xrdp
+    - net-tools
+    - vim
+    - openssh-server
+    - uget
+    - aria2
+    - sshpass
+    - adb
+    - shadowsocks-libev
+    - privoxy
+    - cifs-utils
+    - python3-pip
+    - samba
+    - etckeeper
+    - htop
+    - curl
+- name: Install apt dev packages
+  tags:
+    - apt
+    - dev
+  apt:
+    name:
+    - maven
+    - ruby
+    - virtualbox
+
+- name: Install apt optional packages
+  tags:
+    - optional
+    - never
+  apt:
+    name:
+    - vagrant
+    - wine64
+    - mingw-w64
+    - mp3wrap
+    - rename

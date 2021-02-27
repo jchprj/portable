@@ -1,5 +1,15 @@
 # Portable
 
+Introduce Ansible:
+
+* Defined `ansible-playbook` task in `.vscode/tasks.json` which is used to run any Ansible playbook in this repo.
+* The `inventory` folder is used to define hosts, such as:
+    ```
+    ubuntu ansible_host=localhost
+    ```
+    Then could run the `ubuntu.yml` playbook to localhost, no need to change the hosts in `ubuntu.yml`.
+
+
 ## Chocolatey(Windows)
 
 Some scripts need `choco`, the package manager for Windows.

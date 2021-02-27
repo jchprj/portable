@@ -1,0 +1,45 @@
+---
+- hosts: ubuntu
+  gather_facts: no
+  become: yes
+  vars:
+    download: False
+    pip_version:
+      # - pip
+      - pip3
+
+  tasks:
+  - name: ping
+    ping:
+
+  # http://c-nergy.be/blog/?p=13641
+  # xRDP – New “Authentication Required…” Popup showing up in Ubuntu 19.04
+  - name: Copy files to surpress xRDP authentication popup
+    copy:
+      src: 45-allow-colord.pkla
+      dest: /etc/polkit-1/localauthority/50-local.d/
+
+  - name: Install apt
+    include_tasks: ../../packages/apt.yml
+    tags: core,dev,upgrade
+
+  - name: Download and install deb packages
+    include_tasks: ../../packages/download.yml
+    tags: download
+
+  - name: Install snap packages
+    include_tasks: ../../packages/snap.yml
+    tags: snap
+
+  - name: Install pip packages
+    include_tasks: ../../packages/pip.yml
+    tags: pip
+
+  - name: Ensure group "docker"
+    ansible.builtin.group:
+      name: docker
+      state: present
+  - name: Ensure user "docker"
+    ansible.builtin.user:
+      name: docker
+      group: docker

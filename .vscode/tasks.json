@@ -17,7 +17,12 @@
             "label": "choco install -y",
             "type": "shell",
             "command": "elevation.cmd",
-            "args": ["choco", "install", "-y", "${selectedText}"],
+            "args": [
+                "choco",
+                "install",
+                "-y",
+                "${selectedText}"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}\\scripts"
             }
@@ -26,7 +31,11 @@
             "label": "choco install",
             "type": "shell",
             "command": "elevation.cmd",
-            "args": ["choco", "install", "${selectedText}"],
+            "args": [
+                "choco",
+                "install",
+                "${selectedText}"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}\\scripts"
             }
@@ -35,43 +44,113 @@
             "label": "Open choco package in browser",
             "type": "shell",
             "command": "explorer",
-            "args": ["\"https://chocolatey.org/packages/${selectedText}\""]
+            "args": [
+                "\"https://chocolatey.org/packages/${selectedText}\""
+            ]
         },
         {
             "label": "choco info",
             "type": "shell",
             "command": "choco",
-            "args": ["info", "${selectedText}"]
+            "args": [
+                "info",
+                "${selectedText}"
+            ]
         },
         {
             "label": "code --install-extension",
             "type": "shell",
             "command": "code",
-            "args": ["--install-extension", "${selectedText}"]
+            "args": [
+                "--install-extension",
+                "${selectedText}"
+            ]
         },
         {
             "label": "code --list-extensions",
             "type": "shell",
             "command": "code",
-            "args": ["--list-extensions"]
+            "args": [
+                "--list-extensions"
+            ]
         },
         {
             "label": "Open VS Code extension in browser",
             "type": "shell",
             "command": "explorer",
-            "args": ["\"https://marketplace.visualstudio.com/items?itemName=${selectedText}\""]
+            "args": [
+                "\"https://marketplace.visualstudio.com/items?itemName=${selectedText}\""
+            ]
         },
         {
             "label": "npm install --global",
             "type": "shell",
             "command": "npm",
-            "args": ["install", "--global", "${selectedText}"]
+            "args": [
+                "install",
+                "--global",
+                "${selectedText}"
+            ]
         },
         {
             "label": "Open NPM package in browser",
             "type": "shell",
             "command": "explorer",
-            "args": ["\"https://www.npmjs.com/package/${selectedText}\""]
+            "args": [
+                "\"https://www.npmjs.com/package/${selectedText}\""
+            ]
+        },
+        {
+            "label": "ansible-playbook",
+            "type": "shell",
+            "command": "ansible-playbook",
+            "args": [
+                "-i",
+                "inventory",
+                "${file}",
+                "\"$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )\"",
+                "${command:extension.commandvariable.selectedText}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "ansible-playbook -vvv",
+            "type": "shell",
+            "command": "ansible-playbook",
+            "args": [
+                "-i",
+                "inventory",
+                "${file}",
+                "\"$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )\"",
+                "${command:extension.commandvariable.selectedText}",
+                "-vvv"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "ansible-lint",
+            "type": "shell",
+            "command": "ansible-lint",
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "echo multi selection",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "'${command:extension.commandvariable.selectedText}'",
+                "|", "tr", "'\n'", "','"
+            ],
+            "problemMatcher": []
         }
     ]
 }

@@ -2,3 +2,5 @@ scripts/pass
 software
 tmp
 .metals
+inventory/*
+!inventory/.gitkeep
