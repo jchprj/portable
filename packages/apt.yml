@@ -44,6 +44,7 @@
     name:
     - maven
     - ruby
+    - ruby-dev
     - virtualbox
 
 - name: Install apt optional packages

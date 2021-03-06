@@ -8,6 +8,12 @@
   tags: 
     - snap
     - core
+# - name: Install snap dev packages
+#   snap:
+#     name:
+#   tags: 
+#     - snap
+#     - dev
 
 - name: Install snap core packages with option --classic
   snap:
@@ -40,9 +46,6 @@
     # For your case, you can move the file to your snap folder: ~/snap/shadowsocks-libev, then you shall be able to run it.
     - shadowsocks-libev
   tags: 
-    - snap
-    - core
-  tags: 
     - never
     - use_snap_instead_apt
 
@@ -56,7 +59,14 @@
 
 - name: Install snap optional packages
   snap:
-    name: p3x-onenote
+    name: brave
   tags: 
     - never
     - optional
+
+- name: Install snap experiment packages
+  snap:
+    name: p3x-onenote
+  tags: 
+    - never
+    - experiment

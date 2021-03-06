@@ -1,4 +1,4 @@
----
+--- # Available tags: core,dev,upgrade,optional,experiment
 - hosts: ubuntu
   gather_facts: no
   become: yes
