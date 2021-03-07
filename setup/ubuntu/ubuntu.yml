@@ -1,4 +1,6 @@
---- # Available tags: core,dev,upgrade,optional,experiment
+--- 
+# Available tags: core,dev,upgrade,optional,experiment
+# The tags showing in this playbook do not mean all will be applied, it depends on how tags are defined in the referred task, if one task has `never` tag, it will not be applied by default.
 - hosts: ubuntu
   gather_facts: no
   become: yes
@@ -21,7 +23,7 @@
 
   - name: Install apt
     include_tasks: ../../packages/apt.yml
-    tags: core,dev,upgrade
+    tags: core,dev,upgrade,optional
 
   - name: Download and install deb packages
     include_tasks: ../../packages/download.yml
@@ -29,7 +31,7 @@
 
   - name: Install snap packages
     include_tasks: ../../packages/snap.yml
-    tags: snap
+    tags: snap,dev,optional
 
   - name: Install pip packages
     include_tasks: ../../packages/pip.yml

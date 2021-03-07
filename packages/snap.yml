@@ -59,7 +59,9 @@
 
 - name: Install snap optional packages
   snap:
-    name: brave
+    name: 
+      - brave
+      - pinta
   tags: 
     - never
     - optional
