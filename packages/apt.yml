@@ -46,6 +46,7 @@
     - ruby
     - ruby-dev
     - virtualbox
+    - npm
 
 - name: Install apt optional packages
   tags:
