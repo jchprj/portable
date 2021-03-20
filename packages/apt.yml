@@ -42,6 +42,7 @@
     - dev
   apt:
     name:
+    - openjdk-11-jdk
     - maven
     - ruby
     - ruby-dev
