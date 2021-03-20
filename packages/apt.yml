@@ -36,6 +36,9 @@
     - etckeeper
     - htop
     - curl
+    - p7zip
+    - p7zip-full
+    - p7zip-rar
 - name: Install apt dev packages
   tags:
     - apt

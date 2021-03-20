@@ -5,6 +5,7 @@
     - docker
     - htop
     - scrcpy
+    - p7zip-desktop
   tags: 
     - snap
     - core
