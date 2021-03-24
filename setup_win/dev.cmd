@@ -1,5 +1,6 @@
 choco install -y nodejs.install
 choco install -y python
+choco install -y kotlinc
 
 choco install -y maven
 choco install -y gradle
