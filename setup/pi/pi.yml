@@ -1,0 +1,51 @@
+# configuration: VNC, SSH, hostname
+
+# ansible-galaxy collection install community.general
+
+---
+- hosts: workpi
+  gather_facts: no
+
+  tasks:
+  - name: ping
+    ping:
+  - apt: 
+      upgrade: yes
+      autoremove: yes
+    become: yes
+  - name: Install apt packages
+    apt:
+      name: 
+      - adb
+      - ansible
+      - apt-transport-https
+      - aria2
+      - ca-certificates
+      - code
+      - curl
+      - etckeeper
+      - firefox-esr
+      - gnupg-agent
+      - htop
+      - maven
+      - net-tools
+      - remmina
+      - samba
+      - shadowsocks-libev
+      - snapd
+      - software-properties-common
+      - sshpass
+      - telnet
+      - uget
+      - unzip
+      - vim
+      - xrdp
+      - zip
+      state: present
+    become: yes
+  - name: Install snap packages
+    community.general.snap:
+      name:
+      - scrcpy
+      channel: beta
+    become: yes
