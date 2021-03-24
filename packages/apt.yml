@@ -17,29 +17,29 @@
     - core
   apt:
     name:
+    - adb
     - ansible
     - ansible-lint            # https://bobcares.com/blog/ansible-playbook-tasks-file-must-contain-a-list-of-tasks/
-    - git
-    - xrdp
-    - net-tools
-    - vim
-    - openssh-server
-    - uget
     - aria2
-    - sshpass
-    - adb
-    - shadowsocks-libev
-    - privoxy
     - cifs-utils
-    - python3-pip
-    - samba
-    - etckeeper
-    - htop
     - curl
+    - dos2unix
+    - etckeeper
+    - git
+    - htop
+    - net-tools
+    - openssh-server
     - p7zip
     - p7zip-full
     - p7zip-rar
-    - dos2unix
+    - privoxy
+    - python3-pip
+    - samba
+    - shadowsocks-libev
+    - sshpass
+    - uget
+    - vim
+    - xrdp
     - zsh
 - name: Install apt dev packages
   tags:
@@ -47,12 +47,12 @@
     - dev
   apt:
     name:
-    - openjdk-11-jdk
     - maven
+    - npm
+    - openjdk-11-jdk
     - ruby
     - ruby-dev
     - virtualbox
-    - npm
 
 - name: Install apt optional packages
   tags:
@@ -60,8 +60,8 @@
     - never
   apt:
     name:
-    - vagrant
-    - wine64
     - mingw-w64
     - mp3wrap
     - rename
+    - vagrant
+    - wine64
