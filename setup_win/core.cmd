@@ -13,3 +13,9 @@ choco install -y mremoteng
 
 scoop install sudo
 scoop install aria2 curl grep sed less touch
+
+choco install scrcpy
+REM for scrcpy if you don't have it yet
+choco install adb
+
+choco install rclone

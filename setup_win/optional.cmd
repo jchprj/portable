@@ -31,10 +31,6 @@ choco install angryip
 
 choco install steam
 
-choco install scrcpy
-REM for scrcpy if you don't have it yet
-choco install adb
-
 REM NirSoft
 choco install dllexp
 
