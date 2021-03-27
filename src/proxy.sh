@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 echo 
-echo cat ~/.gitconfig
-cat ~/.gitconfig
+echo "cat ~/.gitconfig | grep proxy"
+cat ~/.gitconfig | grep proxy
 echo 
-echo cat ~/.npmrc
-cat ~/.npmrc
+echo "cat ~/.npmrc | grep proxy"
+cat ~/.npmrc | grep proxy
 echo 
-echo cat ~/.gradle/gradle.properties
-cat ~/.gradle/gradle.properties
+echo "cat ~/.gradle/gradle.properties | grep proxy"
+cat ~/.gradle/gradle.properties | grep proxy
