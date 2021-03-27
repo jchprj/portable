@@ -8,3 +8,6 @@ cat ~/.npmrc | grep proxy
 echo 
 echo "cat ~/.gradle/gradle.properties | grep proxy"
 cat ~/.gradle/gradle.properties | grep proxy
+echo 
+echo "cat /etc/apt/apt.conf.d/* |grep proxy"
+cat /etc/apt/apt.conf.d/* |grep proxy
