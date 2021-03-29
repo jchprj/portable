@@ -6,6 +6,7 @@
     - htop
     - scrcpy
     - p7zip-desktop
+    - ksnip
   tags: 
     - snap
     - core
