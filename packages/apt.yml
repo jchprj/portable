@@ -36,6 +36,7 @@
     - python3-pip
     - samba
     - shadowsocks-libev
+    - sqlitebrowser
     - sshpass
     - uget
     - vim
