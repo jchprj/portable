@@ -26,6 +26,7 @@
     - dos2unix
     - etckeeper
     - git
+    - glogg
     - htop
     - net-tools
     - openssh-server
