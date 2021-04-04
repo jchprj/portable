@@ -67,6 +67,24 @@
             ]
         },
         {
+            "label": "code --install-extension(multiple)",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "'${command:extension.commandvariable.selectedText}'",
+                "|",
+                "tr",
+                "'\n'",
+                "' '",
+                "|",
+                "xargs",
+                "-n1",
+                "code",
+                "--install-extension"
+            ],
+            "problemMatcher": []
+        },
+        {
             "label": "code --list-extensions",
             "type": "shell",
             "command": "code",
@@ -106,13 +124,13 @@
             "command": "ansible-playbook",
             "args": [
                 "-i",
-                "inventory",
+                ".",
                 "${file}",
                 "\"$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )\"",
                 "${command:extension.commandvariable.selectedText}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/inventory"
             },
             "problemMatcher": []
         },
@@ -122,14 +140,14 @@
             "command": "ansible-playbook",
             "args": [
                 "-i",
-                "inventory",
+                ".",
                 "${file}",
                 "\"$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )\"",
                 "${command:extension.commandvariable.selectedText}",
                 "-vvv"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/inventory"
             },
             "problemMatcher": []
         },
@@ -148,8 +166,25 @@
             "command": "echo",
             "args": [
                 "'${command:extension.commandvariable.selectedText}'",
-                "|", "tr", "'\n'", "','"
+                "|",
+                "tr",
+                "'\n'",
+                "' '"
             ],
+            "problemMatcher": []
+        },
+        {
+            "label": "ansible-vault edit",
+            "type": "shell",
+            "command": "ansible-vault",
+            "args": [
+                "edit",
+                "${file}",
+                "--ask-vault-pass"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
             "problemMatcher": []
         }
     ]
