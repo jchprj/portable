@@ -35,6 +35,7 @@
     - intellij-idea-community
     # - intellij-idea-ultimate
     # - intellij-idea-educational
+    - kotlin
     classic: yes
   tags: 
     - snap
