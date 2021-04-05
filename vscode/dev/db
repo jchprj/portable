@@ -1,0 +1,5 @@
+mtxr.sqltools
+mtxr.sqltools-driver-mysql
+mtxr.sqltools-driver-mssql
+mtxr.sqltools-driver-sqlite
+mongodb.mongodb-vscode
