@@ -1,6 +1,11 @@
 slevesque.vscode-autohotkey
 
 
+
+ms-vscode.cpptools
+
+
+
 ms-dotnettools.csharp
 ms-vscode.mono-debug
 formulahendry.dotnet-test-explorer

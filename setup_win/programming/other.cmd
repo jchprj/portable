@@ -1,5 +1,10 @@
 choco install -y nodejs.install
 
+
+
+choco install qtcreator
+
+
 REM APLv2. C#.
 choco install scriptcs
 
