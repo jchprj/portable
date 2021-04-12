@@ -36,6 +36,7 @@
     # - intellij-idea-ultimate
     # - intellij-idea-educational
     - kotlin
+    - groovy
     classic: yes
   tags: 
     - snap

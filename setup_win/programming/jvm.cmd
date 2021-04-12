@@ -16,6 +16,7 @@ choco install intellijidea-community
 choco install javadecompiler-gui
 
 
+choco install groovy
 
 
 scoop bucket add extras
