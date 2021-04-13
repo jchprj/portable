@@ -54,6 +54,7 @@
     - npm
     - openjdk-8-jdk
     - openjdk-11-jdk
+    - scala
     - ruby
     - ruby-dev
     - virtualbox

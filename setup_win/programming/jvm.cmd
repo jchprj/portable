@@ -15,6 +15,7 @@ choco install intellijidea-community
 
 choco install javadecompiler-gui
 
+choco install scala
 
 choco install groovy
 
