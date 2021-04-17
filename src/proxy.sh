@@ -1,13 +1,21 @@
 #!/usr/bin/env bash
 echo 
-echo "cat ~/.gitconfig | grep proxy"
-cat ~/.gitconfig | grep proxy
+echo "cat ~/.gitconfig | grep -i proxy"
+cat ~/.gitconfig | grep -i proxy
 echo 
-echo "cat ~/.npmrc | grep proxy"
-cat ~/.npmrc | grep proxy
+echo "cat ~/.npmrc | grep -i proxy"
+cat ~/.npmrc | grep -i proxy
 echo 
-echo "cat ~/.gradle/gradle.properties | grep proxy"
-cat ~/.gradle/gradle.properties | grep proxy
+echo "cat ~/.gradle/gradle.properties | grep -i proxy"
+cat ~/.gradle/gradle.properties | grep -i proxy
 echo 
-echo "cat /etc/apt/apt.conf.d/* |grep proxy"
-cat /etc/apt/apt.conf.d/* |grep proxy
+echo "cat /etc/apt/apt.conf.d/* |grep -i proxy"
+cat /etc/apt/apt.conf.d/* |grep -i proxy
+echo 
+echo "cat /etc/environment |grep -i proxy"
+cat /etc/environment |grep -i proxy
+echo
+echo "sudo snap get system proxy.http"
+sudo snap get system proxy.http
+echo "sudo snap get system proxy.https"
+sudo snap get system proxy.https
