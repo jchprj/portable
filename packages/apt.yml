@@ -33,6 +33,7 @@
     - p7zip
     - p7zip-full
     - p7zip-rar
+    - pipenv
     - privoxy
     - python3-pip
     - samba
