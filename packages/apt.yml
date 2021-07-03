@@ -7,6 +7,7 @@
     - apt
     - upgrade
   apt:
+    update_cache: yes
     upgrade: yes
     autoremove: yes
     allow-unauthenticated: yes
