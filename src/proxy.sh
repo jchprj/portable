@@ -19,3 +19,6 @@ echo "sudo snap get system proxy.http"
 sudo snap get system proxy.http
 echo "sudo snap get system proxy.https"
 sudo snap get system proxy.https
+echo
+echo "ls ~/.config/JetBrains/*/options/proxy.settings.xml|xargs -I {} sh -c \"echo {}; cat {}; echo\""
+ls ~/.config/JetBrains/*/options/proxy.settings.xml|xargs -I {} sh -c "echo {}; cat {}; echo"
