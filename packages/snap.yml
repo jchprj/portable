@@ -67,6 +67,7 @@
     name: 
       - brave
       - pinta
+      - obs-studio
   tags: 
     - never
     - optional
