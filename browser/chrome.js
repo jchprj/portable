@@ -5,6 +5,8 @@ var chrome = `
 
 ## Core
 
+[Tab-Snap](https://chrome.google.com/webstore/detail/tab-snap/ajjloplcjllkammemhenacfjcccockde)
+
 [Copy as Markdown](https://chrome.google.com/webstore/detail/fkeaekngjflipcockcnpobkpbbfbhmdn)
 
 [Dark Reader](https://chrome.google.com/webstore/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh)
