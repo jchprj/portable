@@ -22,3 +22,5 @@ REM for scrcpy if you don't have it yet
 choco install adb
 
 choco install rclone
+REM GPLv2. C++
+choco install windirstat
