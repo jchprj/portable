@@ -41,6 +41,7 @@
     - shadowsocks-libev
     - sqlitebrowser
     - sshpass
+    - tree
     - uget
     - vim
     - xrdp

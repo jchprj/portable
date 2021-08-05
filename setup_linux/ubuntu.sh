@@ -1,7 +1,11 @@
+# https://askubuntu.com/questions/7470/how-to-run-sudo-apt-get-update-through-proxy-in-commandline
+# sudo http_proxy=http://yourserver apt update
+
 sudo apt update -y
 sudo apt install -y htop
 sudo apt install -y net-tools
 sudo apt install -y curl
+sudo apt install -y tree
 # Check ufw status by: sudo ufw status verbose
 sudo ufw allow ssh
 sudo ufw enable

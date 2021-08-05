@@ -1,4 +1,4 @@
-
+REM GPL3. Qt. Indexed, low memory usage, support grep/egrep, real time tailing, bookmark lines
 choco install glogg
 choco install graphviz.portable
 
