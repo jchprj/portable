@@ -12,3 +12,5 @@ brew install --cask visual-studio-code
 brew install shadowsocks-libev
 
 brew install node
+
+brew install lazygit

@@ -12,6 +12,14 @@
     autoremove: yes
     allow-unauthenticated: yes
 
+- name: Add specified repository into sources list
+  tags:
+    - apt
+    - core
+  apt_repository:
+    repo: ppa:lazygit-team/release
+    state: present
+
 - name: Install apt core packages
   tags:
     - apt
@@ -27,8 +35,10 @@
     - dos2unix
     - etckeeper
     - git
+    - gitg
     - glogg
     - htop
+    - lazygit
     - net-tools
     - openssh-server
     - p7zip
