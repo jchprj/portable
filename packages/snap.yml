@@ -8,6 +8,7 @@
     - p7zip-desktop
     - ksnip
     - barrier
+    - gh
   tags: 
     - snap
     - core
