@@ -13,3 +13,5 @@ choco install cyg-get
 
 REM This package can be used with ruby package to provide native building environment for gems.
 choco install msys2
+
+choco install vagrant
