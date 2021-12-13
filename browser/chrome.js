@@ -33,15 +33,19 @@ var chrome = `
 
 [Chrome Regex Search](https://chrome.google.com/webstore/detail/bpelaihoicobbkgmhcbikncnpacdbknn)
 
-[GitHub Repository Size](https://chrome.google.com/webstore/detail/apnjnioapinblneaedefcnopcjepgkci)
-
-[Octotree - GitHub code tree](https://chrome.google.com/webstore/detail/bkhaagjahfmjljalopjnoealnfndnagc)
-
 [Chrome MySQL Admin](https://chrome.google.com/webstore/detail/ndgnpnpakfcdjmpgmcaknimfgcldechn)
 
 [Bang JSON workspace](https://chrome.google.com/webstore/detail/dfmpfciemnocjnpfddbefbhhamhjcmgl)
 
 [Moesif Origin & CORS Changer](https://chrome.google.com/webstore/detail/digfbfaphojjndkpccljibejjbppifbc)\
+
+## GitHub
+
+[GitHub Repository Size](https://chrome.google.com/webstore/detail/apnjnioapinblneaedefcnopcjepgkci)
+
+[Octotree - GitHub code tree](https://chrome.google.com/webstore/detail/bkhaagjahfmjljalopjnoealnfndnagc)
+
+[Better Pull Request for GitHub - Chrome Web Store](https://chrome.google.com/webstore/detail/better-pull-request-for-g/nfhdjopbhlggibjlimhdbogflgmbiahc)
 
 ## Chrome
 
