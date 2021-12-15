@@ -8,3 +8,7 @@ sdk use java 8.0.265-open
 
 sdk install kotlin
 sdk install kscript
+
+# https://techdevlife.wordpress.com/2020/04/20/sdkman-install-java-maven/
+sdk install maven
+sdk install gradle
