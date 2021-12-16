@@ -11,8 +11,6 @@ var chrome = `
 
 [Dark Reader](https://chrome.google.com/webstore/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh)
 
-[Export links of all extensions](https://chrome.google.com/webstore/detail/cmeckkgeamghjhkepejgjockldoblhcb)
-
 [floccus bookmarks sync](https://chrome.google.com/webstore/detail/fnaicdffflnofjppbagibeoednhnbjhg)
 
 [Google Dictionary (by Google)](https://chrome.google.com/webstore/detail/mgijmajocgfcbeboacabfgobmjgjcoja)
