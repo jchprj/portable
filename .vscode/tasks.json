@@ -135,7 +135,21 @@
             "problemMatcher": []
         },
         {
-            "label": "ansible-playbook -vvv",
+            "label": "ansible-playbook",
+            "type": "shell",
+            "command": "ansible-playbook",
+            "args": [
+                "-i",
+                "inventory",
+                "${file}",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "ansible-playbook (-t) -vvv",
             "type": "shell",
             "command": "ansible-playbook",
             "args": [

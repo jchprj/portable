@@ -4,3 +4,4 @@ tmp
 .metals
 inventory/*
 !inventory/.gitkeep
+*.retry

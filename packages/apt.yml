@@ -27,7 +27,7 @@
   apt:
     name:
     - adb
-    - ansible
+    # ansible                 # Use pip
     - ansible-lint            # https://bobcares.com/blog/ansible-playbook-tasks-file-must-contain-a-list-of-tasks/
     - aria2
     - cifs-utils

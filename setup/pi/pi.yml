@@ -17,7 +17,7 @@
     apt:
       name: 
       - adb
-      - ansible
+      # ansible                                     # Use pip
       - apt-transport-https
       - aria2
       - ca-certificates
