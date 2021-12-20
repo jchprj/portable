@@ -1,0 +1,24 @@
+- name: Install scoop core software
+  tags:
+    - core
+  community.windows.win_scoop:
+    name: 
+      - sudo
+      - aria2
+      - curl
+      - grep 
+      - sed
+      - less
+      - touch
+  
+- name: Install scoop net.web software
+  tags: ["never", "net.web"]
+  community.windows.win_scoop:
+    name: 
+      - allure
+
+- name: Install scoop programming.jvm software
+  tags: ["never", "programming.jvm"]
+  community.windows.win_scoop:
+    name: 
+      - springboot                                # scoop bucket add extras

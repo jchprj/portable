@@ -1,0 +1,200 @@
+
+- name: Install chocolatey core software
+  tags:
+    - core
+  win_chocolatey:
+    name: 
+      - 7zip
+      - googlechrome
+      # googlechrome.canary
+      - firefox
+      - git.install
+      - gh
+      - lazygit
+      - tortoisegit
+      - openvpn
+      - cpu-z.portable
+      - vscode
+      - microsoft-windows-terminal
+      - portqry
+      - mremoteng
+      - chocolateygui
+      - scrcpy
+      - adb                                   # for scrcpy if you don't have it yet
+      - rclone
+      - windirstat                            # GPLv2. C++
+      - ultravnc
+      - barrier
+      # ngrok.portable
+    state: present
+
+- name: Install chocolatey core software
+  tags: ["never", "game"]
+  win_chocolatey:
+    name: 
+      - steam-client
+  
+- name: Install chocolatey dev.android software
+  tags: ["never", "dev.android"]
+  win_chocolatey:
+    name: 
+      - androidstudio
+  
+- name: Install chocolatey dev.db software
+  tags: ["never", "dev.db"]
+  win_chocolatey:
+    name: 
+      - mysql.workbench
+      - heidisql
+      - sqlyog                                  # community version
+      - redis-desktop-manager
+      - sqlitebrowser.portable
+      - mongodb
+      - mongodb.portable
+      - mongoclient
+      - dbeaver                                 # REM APLv2. Java
+      # dbeaver-ee
+      - nosql-workbench
+  
+- name: Install chocolatey dev.db software
+  tags: ["never", "dev.debug"]
+  win_chocolatey:
+    name: 
+      - x64dbg.portable                          # GPLv3. C++
+  
+- name: Install chocolatey dev.virtual software
+  tags: ["never", "dev.virtual"]
+  win_chocolatey:
+    name: 
+      - virtualbox
+      - docker-desktop
+      - Xming
+      - mingw                                     # This will install a python.exe into the Chocolatey bin path, cause some Python issue.
+      - cygwin                                    # GPL
+      - cyg-get
+      - msys2                                     # This package can be used with ruby package to provide native building environment for gems.
+      - vagrant
+  
+- name: Install chocolatey net.download software
+  tags: ["never", "net.download"]
+  win_chocolatey:
+    name: 
+      - uget
+      - emule
+      - qbittorrent
+      - aria2
+  
+- name: Install chocolatey net.download software
+  tags: ["never", "net.network"]
+  win_chocolatey:
+    name: 
+      - nmap                                      # Nmap Public Source License(based on GPLv2 but prohibid commercial embeded use cases)
+      - nssm
+      - wireshark
+      - soapui
+      - papercut                                  # Papercut is a simplified SMTP server designed to only receive messages (not to send them on) with a GUI on top of it allowing you to see the messages it receives.
+      - angryip                                   # GPLv2. Java. Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features.
+      - portqry
+  
+- name: Install chocolatey net.download software
+  tags: ["never", "net.remote"]
+  win_chocolatey:
+    name: 
+      - ultravnc
+      - mremoteng
+      - winscp.portable
+      - barrier                                   # GPLv2. C++. KVM software, forked from Symless's Synergy 1.9 codebase. Synergy is a commercialized reimplementation of the original CosmoSynergy written by Chris Schoeneman.
+      - filezilla
+      - wakemeonlan
+      - openvpn
+  
+- name: Install chocolatey net.web software
+  tags: ["never", "net.web"]
+  win_chocolatey:
+    name: 
+      - postman
+      - insomnia-rest-api-client                  # MIT. Javascript. Powerful HTTP toolbelt, in one intuitive app
+  
+- name: Install chocolatey programming.jvm software
+  tags: ["never", "programming.jvm"]
+  win_chocolatey:
+    name: 
+      - kotlinc
+      - maven
+      - gradle
+      - jdk8
+      - openjdk
+      - intellijidea-community
+      # intellijidea-ultimate
+      - javadecompiler-gui
+      - scala
+      - groovy
+  
+- name: Install chocolatey programming.other software
+  tags: ["never", "programming.other"]
+  win_chocolatey:
+    name: 
+      - nodejs.install
+      - qtcreator
+      - scriptcs                                  # APLv2. C#
+      - ruby
+      - jruby
+      - strawberryperl                            # GPLv1
+  
+- name: Install chocolatey programming.python software
+  tags: ["never", "programming.python"]
+  win_chocolatey:
+    name: 
+      - python3
+      - miniconda3                                # conda install anaconda-navigator (https://docs.anaconda.com/anaconda/navigator/install/)
+      - anaconda3
+  
+- name: Install chocolatey tools.build software
+  tags: ["never", "tools.build"]
+  win_chocolatey:
+    name: 
+      - -y ant -i
+      - rufus
+      - rosaimagewriter                           # GPLv3
+  
+- name: Install chocolatey tools.graphics software
+  tags: ["never", "tools.graphics"]
+  win_chocolatey:
+    name: 
+      - paint.net                                 # Free for business, commercial, school, and government use. Non OSS.
+      - pinta                                     # MIT, Pinta is a Gtk# clone of Paint.Net 3.0
+      - gimp
+      - krita                                     # GPLv3. Qt. Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry.
+      - nomacs
+      - sharex                                    # GPLv3. C#. Screen capture, file sharing and productivity tool.
+      - screentogif
+      - tiled
+  
+- name: Install chocolatey tools.local software
+  tags: ["never", "tools.local"]
+  win_chocolatey:
+    name: 
+      - glogg                                     # GPL3. Qt. Indexed, low memory usage, support grep/egrep, real time tailing, bookmark lines
+      - graphviz.portable
+      - sumatrapdf.commandline
+      - notepadplusplus.commandline
+      - hourglass.install
+      - joplin                                    # MIT. JavaScript. Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS.
+
+
+- name: Install chocolatey tools.system software
+  tags: ["never", "tools.system"]
+  win_chocolatey:
+    name: 
+      - hosts.editor
+      - dllexp                                    # NirSoft
+      - sysinternals
+      - cpu-z.portable
+  
+- name: Install chocolatey tools.video software
+  tags: ["never", "tools.video"]
+  win_chocolatey:
+    name: 
+      - vlc
+      - avidemux                                  # GPLv2. Avidemux is a free video editor designed for simple cutting, filtering and encoding tasks. It supports many file types, including AVI, DVD compatible MPEG files, MP4 and ASF, using a variety of codecs. Tasks can be automated using projects, job queue and powerful scripting capabilities.
+      - obs-studio                                # GPLv2. Open Broadcaster Software, free and open source software for video recording and live streaming.
