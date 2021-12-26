@@ -14,6 +14,13 @@
     include_tasks: ../../packages/choco.yml
     tags: core
 
+  - name: Install some more chocolatey software
+    win_chocolatey:
+      name: 
+        - vlc
+        - audacity
+        - calibre
+
   # Install scoop first from https://scoop.sh/
   - name: Install scoop
     include_tasks: ../../packages/scoop.yml

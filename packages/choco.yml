@@ -198,3 +198,15 @@
       - vlc
       - avidemux                                  # GPLv2. Avidemux is a free video editor designed for simple cutting, filtering and encoding tasks. It supports many file types, including AVI, DVD compatible MPEG files, MP4 and ASF, using a variety of codecs. Tasks can be automated using projects, job queue and powerful scripting capabilities.
       - obs-studio                                # GPLv2. Open Broadcaster Software, free and open source software for video recording and live streaming.
+
+- name: Install chocolatey tools.audio software
+  tags: ["never", "tools.audio"]
+  win_chocolatey:
+    name: 
+      - audacity                                  # GPLv2+GPLv3+CC-BY3.0. C++
+
+- name: Install chocolatey tools.content software
+  tags: ["never", "tools.content"]
+  win_chocolatey:
+    name: 
+      - calibre                                  # GPLv3. Python
