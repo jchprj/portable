@@ -1,0 +1,16 @@
+
+  - name: Git checkout
+    git:
+      repo: 'https://github.com/google/adb-sync'
+      dest: /tmp/adb-sync
+
+  - name: Copy adb-sync
+    copy:
+      src: /tmp/adb-sync/
+      dest: /usr/bin/
+      remote_src: yes
+    become: yes
+
+  - file:
+      path: /tmp/adb-sync
+      state: absent

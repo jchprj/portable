@@ -9,6 +9,7 @@
     - httpie
     - pipx
     - ansible
+    - pyyaml
     executable: "{{ item }}"
   loop: "{{ pip_version }}"
   become: no

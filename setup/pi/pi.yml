@@ -3,7 +3,7 @@
 # ansible-galaxy collection install community.general
 
 ---
-- hosts: workpi
+- hosts: pi
   gather_facts: no
 
   tasks:
@@ -49,3 +49,6 @@
       - scrcpy
       channel: beta
     become: yes
+
+  - name: Install from GitHub repositories
+    include_tasks: ../../packages/github.yml

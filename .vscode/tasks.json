@@ -119,7 +119,7 @@
             ]
         },
         {
-            "label": "ansible-playbook",
+            "label": "ansible-playbook commandvariable",
             "type": "shell",
             "command": "ansible-playbook",
             "args": [
@@ -141,7 +141,7 @@
             "args": [
                 "-i",
                 "inventory",
-                "${file}",
+                "${file}"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
