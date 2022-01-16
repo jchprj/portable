@@ -1,0 +1,40 @@
+---
+- hosts: wsl
+  gather_facts: no
+  become: yes
+  vars:
+    pip_version:
+      # - pip
+      - pip3
+  
+  # environment:
+  #   HTTP_PROXY: '127.0.0.1:1080'
+  #   HTTPS_PROXY: '127.0.0.1:1080'
+
+  tasks:
+  - name: ping
+    ping:
+      
+  - name: apt upgrade
+    tags:
+      - apt
+      - upgrade
+    apt:
+      update_cache: yes
+      upgrade: yes
+      autoremove: yes
+      allow-unauthenticated: yes
+
+  - name: Install apt packages
+    apt:
+      name:
+      - vagrant
+      - python3-pip
+  - name: Install pip core packages
+    pip:
+      name:
+      - ansible
+      executable: "{{ item }}"
+    loop: "{{ pip_version }}"
+    become: no
+    

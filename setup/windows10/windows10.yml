@@ -21,6 +21,12 @@
         - audacity
         - calibre
 
+  - name: Install vagrant matches current Ubuntu version
+    win_chocolatey:
+      name: 
+        - vagrant
+      version: 2.2.6
+
   # Install scoop first from https://scoop.sh/
   - name: Install scoop
     include_tasks: ../../packages/scoop.yml
@@ -30,6 +36,16 @@
     win_optional_feature:
       name: TelnetClient
       state: present
+
+  - name: Firewall rule to allow SSH on TCP port 22
+    win_firewall_rule:
+      name: SSH
+      localport: 22
+      action: allow
+      direction: in
+      protocol: tcp
+      state: present
+      enabled: yes
     
   - name: Install Microsoft Subsystem for Linux
     win_optional_feature:
@@ -37,11 +53,18 @@
       state: present
     register: wsl_status
   - debug: var=wsl_status
+    
+  - name: Install VirtualMachinePlatform
+    win_optional_feature:
+      name: VirtualMachinePlatform
+      state: present
+    register: vmp_status
+  - debug: var=vmp_status
 
   - name: reboot_required
     block:
       - name: "win_reboot if reboot_required"
         debug: var=wsl_status
 
-      # - win_reboot:
-        # when: wsl_status.reboot_required
+      - win_reboot:
+        when: wsl_status.reboot_required or vmp_status.reboot_required
