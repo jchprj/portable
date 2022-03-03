@@ -140,6 +140,7 @@
       - ruby
       - jruby
       - strawberryperl                            # GPLv1
+      - bloomrpc
   
 - name: Install chocolatey programming.python software
   tags: ["never", "programming.python"]
