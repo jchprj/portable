@@ -63,6 +63,10 @@ var chrome = `
 
 [Video Downloader by Video Octopus 🐙](https://chrome.google.com/webstore/detail/oacemiijpacmjnmhokeehdnhjbeeklod)
 
+[Vertical Tabs - Chrome Web Store](https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm)
+
+[Auto Refresh Plus | Page Monitor - Chrome Web Store](https://chrome.google.com/webstore/detail/auto-refresh-plus-page-mo/hgeljhfekpckiiplhkigfehkdpldcggm)
+
 ## Google
 
 [Gmail](https://chrome.google.com/webstore/detail/pjkljhegncpnkpknbcohdijeoejaedia)
