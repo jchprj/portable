@@ -28,7 +28,14 @@
       # ngrok.portable
     state: present
 
-- name: Install chocolatey core software
+- name: Install chocolatey hardware software
+  tags: ["never", "hardware"]
+  win_chocolatey:
+    name: 
+      - crystaldiskinfo
+      - crystaldiskmark
+
+- name: Install chocolatey game software
   tags: ["never", "game"]
   win_chocolatey:
     name: 
