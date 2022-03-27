@@ -12,3 +12,7 @@ sdk install kscript
 # https://techdevlife.wordpress.com/2020/04/20/sdkman-install-java-maven/
 sdk install maven
 sdk install gradle
+
+
+# https://stackoverflow.com/questions/52524112/how-do-i-install-java-on-mac-osx-allowing-version-switching
+# sdk install java my-local-13 /Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home
