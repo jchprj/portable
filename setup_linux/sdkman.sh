@@ -1,10 +1,23 @@
+# https://sdkman.io/
+curl -s "https://get.sdkman.io" | bash
+
+
 # https://medium.com/@ajeesh2705/use-multiple-version-of-java-6219258bd8eb
 
+# List available JDK
 sdk list java
+
+# Install JDK
 sdk install java
 # Version number may change if new version released
-sdk install java 8.0.265-open
-sdk use java 8.0.265-open
+sdk install java 17.0.2-open
+sdk install java 11.0.12-open
+sdk install java 8.0.302-open
+
+# Switch JDK version
+sdk use java 17.0.2-open
+
+
 
 sdk install kotlin
 sdk install kscript
