@@ -34,6 +34,8 @@
     name: 
       - crystaldiskinfo
       - crystaldiskmark
+      - rufus
+      - rosaimagewriter                           # GPLv3
 
 - name: Install chocolatey game software
   tags: ["never", "game"]
@@ -64,10 +66,12 @@
       - nosql-workbench
   
 - name: Install chocolatey dev.db software
-  tags: ["never", "dev.debug"]
+  tags: ["never", "dev.other"]
   win_chocolatey:
     name: 
       - x64dbg.portable                          # GPLv3. C++
+      - bloomrpc
+      - ant
   
 - name: Install chocolatey dev.virtual software
   tags: ["never", "dev.virtual"]
@@ -147,7 +151,6 @@
       - ruby
       - jruby
       - strawberryperl                            # GPLv1
-      - bloomrpc
   
 - name: Install chocolatey programming.python software
   tags: ["never", "programming.python"]
@@ -156,14 +159,6 @@
       - python3
       - miniconda3                                # conda install anaconda-navigator (https://docs.anaconda.com/anaconda/navigator/install/)
       - anaconda3
-  
-- name: Install chocolatey tools.build software
-  tags: ["never", "tools.build"]
-  win_chocolatey:
-    name: 
-      - -y ant -i
-      - rufus
-      - rosaimagewriter                           # GPLv3
   
 - name: Install chocolatey tools.graphics software
   tags: ["never", "tools.graphics"]
