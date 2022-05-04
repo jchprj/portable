@@ -1,3 +1,4 @@
+pkgmgr /iu:"TelnetClient"
 Enable-PSRemoting -SkipNetworkProfileCheck
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart

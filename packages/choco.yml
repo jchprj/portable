@@ -32,6 +32,7 @@
       - windirstat                            # GPLv2. C++
       - ultravnc
       - barrier
+      - systemtraymenu                        # GPLv3. C# https://github.com/Hofknecht/SystemTrayMenu
       # ngrok.portable
     state: present
 
