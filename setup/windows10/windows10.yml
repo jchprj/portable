@@ -10,6 +10,10 @@
   - name: ping
     win_ping:
     
+  - name: Ping choco
+    include_tasks: ../../packages/choco.yml
+    tags: ping
+    
   - name: Install choco
     include_tasks: ../../packages/choco.yml
     tags: core
@@ -27,7 +31,7 @@
         - vagrant
       version: 2.2.6
 
-  # Install scoop first from https://scoop.sh/
+  # ansible-galaxy collection install community.windows
   - name: Install scoop
     include_tasks: ../../packages/scoop.yml
     tags: core

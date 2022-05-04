@@ -1,1 +1,0 @@
-## Software not available in package managers

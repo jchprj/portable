@@ -1,4 +1,11 @@
 
+- name: Ping test for chocolatey software
+  tags:
+    - ping
+  win_chocolatey:
+    name: 
+      - chocolateygui
+
 - name: Install chocolatey core software
   tags:
     - core
@@ -61,7 +68,7 @@
       - mongodb
       - mongodb.portable
       - mongoclient
-      - dbeaver                                 # REM APLv2. Java
+      - dbeaver                                 # APLv2. Java. Free multi-platform database tool for developers, SQL programmers, database administrators and analysts. Supports any database which has JDBC driver (which basically means - ANY database). EE version also supports non-JDBC datasources (MongoDB, Cassandra, Redis, DynamoDB, etc).
       # dbeaver-ee
       - nosql-workbench
   
