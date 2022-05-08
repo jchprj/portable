@@ -1,1 +1,15 @@
-<meta http-equiv="Refresh" content="0; url='chrome.html'" />
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Browser</title>
+</head>
+<body>
+  <div id="chrome"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="chrome.js"></script>
+  <script>
+    document.getElementById('chrome').innerHTML = marked.parse(chrome)
+  </script>
+</body>
+</html>
