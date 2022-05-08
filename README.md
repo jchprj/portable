@@ -9,6 +9,11 @@ Introduce Ansible:
     ```
     Then could run the `ubuntu.yml` playbook to localhost, no need to change the hosts in `ubuntu.yml`.
 
+## Browser
+
+In `browser` folder, viewed in HTML pages: 
+
+Goto [./browser](./browser)
 
 ## Chocolatey(Windows)
 

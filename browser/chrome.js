@@ -97,6 +97,8 @@ var chrome = `
 
 ## Optional
 
+[Google Input Tools - Chrome Web Store](https://chrome.google.com/webstore/detail/google-input-tools/mclkkofklkfljcocdinagocijmpgbhab/related)
+
 [Chrome Remote Desktop](https://chrome.google.com/webstore/detail/inomeogfingihgjfjlpeplalcfajhgai)
 
 [Logitech Smooth Scrolling](https://chrome.google.com/webstore/detail/dkpejdfnpdkhifgbancbammdijojoffk)
