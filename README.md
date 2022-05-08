@@ -11,7 +11,7 @@ Introduce Ansible:
 
 ## Browser
 
-In `browser` folder, viewed in HTML pages: 
+In `browser` folder, contains some useful Chrome extensions, viewed in HTML pages: 
 
 Goto [./browser](./browser)
 
