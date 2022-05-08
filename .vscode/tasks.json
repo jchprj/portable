@@ -123,14 +123,12 @@
             "type": "shell",
             "command": "ansible-playbook",
             "args": [
-                "-i",
-                ".",
                 "${file}",
                 "\"$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )\"",
                 "${command:extension.commandvariable.selectedText}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/inventory"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
         },
@@ -139,8 +137,6 @@
             "type": "shell",
             "command": "ansible-playbook",
             "args": [
-                "-i",
-                "inventory",
                 "${file}"
             ],
             "options": {
@@ -153,15 +149,13 @@
             "type": "shell",
             "command": "ansible-playbook",
             "args": [
-                "-i",
-                ".",
                 "${file}",
                 "\"$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )\"",
                 "${command:extension.commandvariable.selectedText}",
                 "-vvv"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/inventory"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
         },
@@ -194,6 +188,38 @@
             "args": [
                 "edit",
                 "${file}",
+                "--ask-vault-pass"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "(WSL)ansible-playbook",
+            "type": "shell",
+            "command": "wsl",
+            "args": [
+                "ansible-playbook",
+				"$(wslpath '${file}')",
+                "$( if [ ! -z ${command:extension.commandvariable.selectedText} ]; then echo --tags; else echo '-v'; fi )",
+                "${command:extension.commandvariable.selectedText}",
+                "--ask-vault-pass",
+                "-vvv"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "(WSL)ansible-vault edit",
+            "type": "shell",
+            "command": "wsl",
+            "args": [
+                "ansible-vault",
+                "edit",
+                "$(wslpath '${file}')",
                 "--ask-vault-pass"
             ],
             "options": {

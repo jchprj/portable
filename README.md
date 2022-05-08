@@ -3,7 +3,7 @@
 Introduce Ansible:
 
 * Defined `ansible-playbook` task in `.vscode/tasks.json` which is used to run any Ansible playbook in this repo.
-* The `inventory` folder is used to define hosts, such as:
+* The `inventory` folder used by the Ansible playbook tasks in `.vscode/tasks.json` is located in Ansible default configuration(`/etc/ansible/ansible.cfg`). It is used to define hosts, such as:
     ```
     ubuntu ansible_host=localhost
     ```
