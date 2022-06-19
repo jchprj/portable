@@ -36,6 +36,7 @@
       - dotnet                                # MIT. C# https://github.com/dotnet/runtime
       - dotnet-sdk                            # MIT. C# https://github.com/dotnet/sdk
       - ksnip                                 # GPLv2. Qt. https://github.com/ksnip/ksnip Ksnip is a Qt-based cross-platform screenshot tool that provides many annotation features for your screenshots.
+      - notepad3                              # https://github.com/rizonesoft/Notepad3/blob/master/License.txt
       # ngrok.portable
     state: present
 
