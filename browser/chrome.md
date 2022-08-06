@@ -1,6 +1,3 @@
-
-var chrome = `
-
 # Chrome extensions
 
 ## Core
@@ -108,5 +105,3 @@ var chrome = `
 [Lego Builder](https://chrome.google.com/webstore/detail/mapnbjhfjionggfhlkmhjbmbpgfdlolh)
 
 ## End
-
-`
