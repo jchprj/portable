@@ -43,6 +43,13 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 
 https://github.com/microsoft/winget-cli
 
+## APT
+
+[How to Clear Apt Cache on Ubuntu and Free Crucial Disk Space](https://itsfoss.com/clear-apt-cache/)
+
+    sudo apt clean
+    
+
 ## Snap(Linux)
 
 Install Snapd: https://snapcraft.io/docs/installing-snapd

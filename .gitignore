@@ -5,3 +5,4 @@ tmp
 inventory/*
 !inventory/.gitkeep
 *.retry
+ansible_inventory
