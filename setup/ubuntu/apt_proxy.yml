@@ -1,0 +1,15 @@
+--- 
+- hosts: ubuntu
+  gather_facts: no
+
+  tasks:
+  - name: ping
+    ping:
+
+  - name: Proxy for apt
+    copy:
+      dest: "/etc/apt/apt.conf.d/01proxy"
+      content: |
+        Acquire::http::Proxy "http://proxy:1080/";
+        Acquire::https::Proxy "http://proxy:1080/";
+    become: yes

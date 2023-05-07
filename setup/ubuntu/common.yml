@@ -1,0 +1,37 @@
+--- 
+- hosts: ubuntu
+  gather_facts: no
+
+  tasks:
+  - name: ping
+    ping:
+
+  # http://c-nergy.be/blog/?p=13641
+  # xRDP – New “Authentication Required…” Popup showing up in Ubuntu 19.04
+  - name: Surpress xRDP authentication popup
+    copy:
+      dest: "/etc/polkit-1/localauthority/50-local.d/45-allow-colord.pkla"
+      content: |
+        [Allow Colord all Users]
+        Identity=unix-user:*
+        Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
+        ResultAny=no
+        ResultInactive=no
+        ResultActive=yes
+
+        [Allow Package Management all Users]
+        Identity=unix-user:*
+        Action=org.debian.apt.*;io.snapcraft.*;org.freedesktop.packagekit.*;com.ubuntu.update-notifier.*
+        ResultAny=no
+        ResultInactive=no
+        ResultActive=yes
+    become: yes
+
+  # https://askubuntu.com/questions/1233088/xrdp-desktop-looks-different-when-connecting-remotely
+  - name: Create a login script file for xRDP
+    copy:
+      dest: "~/.xsessionrc"
+      content: |
+        export GNOME_SHELL_SESSION_MODE=ubuntu
+        export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+        export XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
