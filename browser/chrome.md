@@ -24,6 +24,8 @@
 
 [uBlock Origin](https://chrome.google.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
+[Joplin Web Clipper](https://chromewebstore.google.com/detail/joplin-web-clipper/alofnhikmmkdbbbgpnglcpdollgjjfek)
+
 ## Dev
 
 [Chrome Regex Search](https://chrome.google.com/webstore/detail/bpelaihoicobbkgmhcbikncnpacdbknn)

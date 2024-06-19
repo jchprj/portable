@@ -46,8 +46,9 @@
     name: 
       - crystaldiskinfo
       - crystaldiskmark
-      - rufus
+      - rufus                                     # GPLv3
       - rosaimagewriter                           # GPLv3
+      - win32diskimager                           # GPLv2
 
 - name: Install chocolatey game software
   tags: ["never", "game"]
